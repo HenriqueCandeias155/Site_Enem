@@ -6,7 +6,7 @@ export default function App() {
     const [provas, setProvas] = useState([])
 
     async function buscarProvas() {
-        const respostaProvas = await fetch("http://api.enem.dev/v1/exams")
+        const respostaProvas = await fetch("https://api.enem.dev/v1/exams")
         const dadosProvas = await respostaProvas.json()
         setProvas(dadosProvas)
     }
